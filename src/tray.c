@@ -23,6 +23,7 @@
 #include <gtk/gtk.h>
 #include <glib.h>
 #include <glib/gi18n.h>
+#include <gdk/gdkx.h>
 #include <string.h>
 
 #if EVOLUTION_VERSION < 30704
