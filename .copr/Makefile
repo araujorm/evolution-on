@@ -2,8 +2,9 @@
 
 srpm:
 	mkdir -p $(outdir)
-	git archive --prefix=evolution-on-master/ --format=tar.gz HEAD \
-	  -o $(outdir)/evolution-on.tar.gz
+	tar czf $(outdir)/evolution-on.tar.gz \
+	  --exclude-vcs --exclude=./.copr \
+	  --transform 's,^\.,evolution-on-master,' .
 	rpmbuild -bs \
 	  --define "_sourcedir $(outdir)" \
 	  --define "_srcrpmdir $(outdir)" \

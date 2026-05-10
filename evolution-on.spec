@@ -35,7 +35,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/glib-2.0/schemas/org.gnome.evolution.plugin.evolution-on.gschema.xml
 
 %changelog
-* Sat May 10 2026 Rodrigo Araujo <araujo.rm@gmail.com>
+* Sun May 10 2026 Rodrigo Araujo <araujo.rm@gmail.com>
 - Move patches into the git history of the fork; build SRPM from repo via COPR
 
 * Wed Apr 16 2025 Rodrigo Araujo <araujo.rm@gmail.com>
